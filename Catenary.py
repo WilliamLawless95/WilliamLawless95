@@ -22,13 +22,17 @@ def clear():
 
 # Prompt the user to enter the length of the cable (in meters).
 length = float(input('Please enter the length of the cable (m): '))
+if length < 0:  # The cable cannot be of a negative length.
+    length = math.abs(length)
 
 # Prompt the user to enter the height of the first tower (in meters).
 tower1 = float(input('Please enter the height of the first tower (m): '))
-
+if tower1 < 0:  # The tower cannot be of a negative height.
+    tower1 = math.abs(tower1)
 # Prompt the user to enter the height of the first tower (in meters).
 tower2 = float(input('Please enter the height of the second tower (m): '))
-
+if tower2 < 0:  # The tower cannot be of a negative height.
+    tower2 = math.abs(tower2)
 # Prompt the user to enter the height of the center of the cable (in meters).
 # If the towers are of unequal heights, the user is to enter 0.
 height = float(input('Please enter the height of the cable\'s lowest point (m)\n - '
@@ -36,6 +40,8 @@ height = float(input('Please enter the height of the cable\'s lowest point (m)\n
 if tower1 != tower2:
     height = 0
 print('\n')
+
+# Clear the screen for the user to see the output more clearly.
 clear()
 
 # Move the cable into the coordinate plane with the tangential point (0, 0).
@@ -56,11 +62,9 @@ if tower1 == tower2:
         print('The two towers are at the same point.')
     else:
         if height < 0:
-
             # The cable has too much slack.
             print('ERROR: The cable is dragging on the ground.')
         else:
-
             # Print out the results, rounding to 3 decimal places.
             print('The distance between the two towers is {:.3f}'.format(2 * a * x), 'm.')
 else:
