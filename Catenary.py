@@ -1,8 +1,10 @@
 # This Python script solves the 'Hanging Cable Problem' featured as an Amazon interview question.
 
 # The script prompts the user to enter the length of a hanging cable,
-# the height of each of the two towers between which the cable hangs, and
-# the height of the cable at its lowest point.
+# The height of each of the two towers between which the cable hangs, and
+# The height of the cable at its lowest point.
+
+# The output will be the distance between the two towers.
 
 # Import the math library.
 import math
@@ -29,10 +31,12 @@ if length < 0:  # The cable cannot be of a negative length.
 tower1 = float(input('Please enter the height of the first tower (m): '))
 if tower1 < 0:  # The tower cannot be of a negative height.
     tower1 = abs(tower1)
+    
 # Prompt the user to enter the height of the first tower (in meters).
 tower2 = float(input('Please enter the height of the second tower (m): '))
 if tower2 < 0:  # The tower cannot be of a negative height.
     tower2 = abs(tower2)
+    
 # Prompt the user to enter the height of the center of the cable (in meters).
 # If the towers are of unequal heights, the user is to enter 0.
 height = float(input('Please enter the height of the cable\'s lowest point (m)\n - '
