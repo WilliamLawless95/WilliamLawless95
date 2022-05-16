@@ -86,7 +86,7 @@ else:
     a2 = (((z1 + z2) * (y ** 2 - (z1 - z2) ** 2)) -
           (2 * y * math.sqrt(z1 * z2 * (y ** 2 - (z1 - z2) ** 2)))) / (2 * (z1 - z2) ** 2)
 
-    # We use the small of the two solutions.
+    # We use the smaller of the two solutions.
     a = min(a1, a2)
 
     # We calculate the length of each cable segment such that y1 + y2 = y.
