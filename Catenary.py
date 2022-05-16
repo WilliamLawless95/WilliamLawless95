@@ -98,5 +98,5 @@ else:
     x2 = a * math.log((z2 + y2 + a) / a)
 
     # Print out the results, rounding to 3 decimal places.
-    print('The two cable segments are {:.3f}'.format(y1), ' m and {:.3f}'.format(y2), ' m long, respectively.')
-    print('The two towers are {:.3f}'.format(x1 + x2), ' m apart.')
+    print('The two cable segments are {:.3f}'.format(y1), 'm and {:.3f}'.format(y2), 'm long, respectively.')
+    print('The two towers are {:.3f}'.format(x1 + x2), 'm apart.')
