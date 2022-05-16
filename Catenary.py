@@ -40,7 +40,7 @@ if tower2 < 0:  # The tower cannot be of a negative height.
 # Prompt the user to enter the height of the center of the cable (in meters).
 # If the towers are of unequal heights, the user is to enter 0.
 height = float(input('Please enter the height of the cable\'s lowest point (m)\n - '
-                     '(If the towers are of unequal heights,enter 0): '))
+                     '(If the towers are of unequal heights, enter 0): '))
 if tower1 != tower2:
     height = 0
 print('\n')
